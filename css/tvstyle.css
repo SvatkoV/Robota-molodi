@@ -64,6 +64,7 @@ p {margin:0;}
 .top-vac-list{
     height: 510px;
     font-family: SegoeUIRegular;
+	color: #cc3300;
     overflow-y:scroll;
 }
 
@@ -83,22 +84,15 @@ p {margin:0;}
 }
 
 .top-vac-list ul {
-    list-style-type:none;
-    padding:0px;
-}
-
-.li-disc{
-    height:6px;
-    width:6px;
-    border-radius: 50%;
-    background-color: orange;
-    float:left;
-    margin: 4px 8px 0 0;
+    list-style-position:inside;
+    padding:0;
+	color:#f68c06; 
 }
 
 .tvl-date{
     font-size: 10px;
     color:grey;
+	display:inline;
 }
 
 .tvl-position{
