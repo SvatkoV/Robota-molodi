@@ -1,0 +1,97 @@
+/*Навешать картинку на скролл... В li - поменять маркер..... Поменять шрифты*/
+
+
+@font-face {
+    font-family: ACLine;
+    src: url(../fonts/ACLine.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: SegoeUIRegular;
+    src: url(../fonts/SegoeUIRegular.ttf);
+    font-weight: bold;
+}
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+}
+.news{
+    margin-top: 10px;                    /*---For testing my block--*/
+    height:500px;
+}
+.news ul{
+    padding: 5px;
+    list-style-position: inside;
+}
+.news li{
+    color:#f68c06;
+    padding: 5px 0;
+}
+.news li span.date{
+    font-size: 0.8em;                /* ----font-size---  ?????? */
+    color:grey;
+}
+.news li img{
+    width: 100%;
+    border: 1px solid #f68c06;
+    display:none;
+}
+li:nth-child(3) img, li:nth-child(5) img{
+    display: block;
+}
+.footer img, .logo img{
+    width:100%;
+}
+
+li a:hover{
+    color:#f68c06;
+}
+#close{
+    float:right;
+}
+#close:hover{
+    border: 2px solid red;
+}
+.header h1{
+    font-family:"ACLine", sans-serif;
+    font-weight: bold;
+    color:#f68c06;
+    /*font-size: 36px;*/
+}
+.maket{
+    height:50%;                /*-------For testing my block---- */
+}
+div.list{
+    max-height: 70%;            /*-------For testing my block---- */
+    overflow-y:scroll;
+}
+.header div{
+    float:left;
+}
+.header div:first-child{
+    margin-top:5%;
+}
+.header div:nth-child(2)
+{
+    padding-left: 5px;
+}
+.header div:last-child{
+    float:right;
+}
+.header-img{
+    width:80%;
+}
+ul a{
+    color:black;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;                      /*??????*/
+}
+@media(max-width: 974px)
+{
+    .header div:first-child {
+        display: none;
+    }
+}
