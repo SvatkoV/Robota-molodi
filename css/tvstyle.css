@@ -87,21 +87,25 @@ p {margin:0;}
     list-style-position:inside;
     padding:0;
 	color:#f68c06; 
+	font-size: 20px;
 }
 
 .tvl-date{
-    font-size: 10px;
+    font-size: 11px;
     color:grey;
 	display:inline;
+	margin-left:-10px;
 }
 
 .tvl-position{
     font-weight: bold;
     text-decoration: underline;
     color:black;
+	font-size: 16px;
 }
 
 .tvl-salary{
     color:grey;
     margin-bottom: 15px;
+	font-size: 16px;
 }
