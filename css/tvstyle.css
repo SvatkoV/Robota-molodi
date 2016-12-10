@@ -1,4 +1,6 @@
-﻿@font-face {
+﻿/*дать UL list-style-position:inside;*/
+
+@font-face {
     font-family: ACLine;
     src:    url('../fonts/ACLine.eot') format('embedded-opentype'),
             url('../fonts/ACLine.woff2') format('woff2'),
