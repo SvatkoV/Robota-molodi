@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: ACLine;
     src:    url('../fonts/ACLine.eot') format('embedded-opentype'),
             url('../fonts/ACLine.woff2') format('woff2'),
@@ -12,13 +12,82 @@
             url('../fonts/SegoeUIRegular.woff') format('woff'),
             url('../fonts/SegoeUIRegular.ttf') format('truetype');
 }
-p {margin:0;}
-
-.top-vac-div {
-	height:600px;
-	background-color:white;
-/*	border:1px solid black;*/
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
 }
+.news{
+    margin-top: 10px;                    /*---For testing my block--*/
+}
+.news ul{
+    padding: 5px;
+    list-style-position: inside;
+	font-family: SegoeUIRegular;
+}
+.news li{
+    color:#f68c06;
+    padding: 5px 0;
+}
+.news li span.date{
+    font-size: 0.8em;                /* ----font-size---  ?????? */
+    color:grey;
+}
+.news li img{
+    width: 100%;
+    border: 1px solid #f68c06;
+    display:none;
+}
+li:nth-child(3) img, li:nth-child(5) img{
+    display: block;
+}
+.footer img{
+    width:100%;
+}
+
+li a:hover{
+    color:#f68c06;
+}
+#close{
+    float:right;
+}
+#close:hover{
+    border: 2px solid red;
+}
+
+div.list{
+    height:800px;           /*-------For testing my block---- */
+    overflow-y:scroll;
+}
+
+.header div:first-child{
+    margin-top:5%;
+}
+.header div:nth-child(2)
+{
+    padding-left: 5px;
+}
+.header div:last-child{
+    float:right;
+}
+.header-img{
+    width:80%;
+}
+.newslist ul a{
+    color:black;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;    
+}
+		/*----------------------------------------------------------------------------------------------*/
+.top-vac-div {
+	background-color:white;
+/*	border: 2px solid pink;*/
+}
+
+.top-vac-div p {margin-bottom:0px;}
+
 .top-vac-header1 {
 	float:left;
 	margin:6px 0 0 0;
@@ -51,7 +120,7 @@ p {margin:0;}
 	text-align:center;
 	text-decoration:none;
     color: #cc3300;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .add2top span{text-decoration: underline;}
@@ -60,7 +129,7 @@ p {margin:0;}
 .add2top a,p:visited {text-decoration:none;}
 
 .top-vac-list{
-    height: 510px;
+    height: 520px;
     font-family: SegoeUIRegular;
 	color: #cc3300;
     overflow-y:scroll;
@@ -99,11 +168,12 @@ p {margin:0;}
     font-weight: bold;
     text-decoration: underline;
     color:black;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .tvl-salary{
     color:grey;
     margin-bottom: 15px;
-	font-size: 16px;
+	font-size: 14px;
 }
+

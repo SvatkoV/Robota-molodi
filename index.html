@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tvstyle.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tv+news-style.css">
 
 </head>
 
@@ -15,7 +14,11 @@
 	<div id="topvac" class="col-sm-3 col-sm-offset-9 hidden-xs top-vac-div">
 		
 		<div id="topvac0">
-			<a id="close-top-vac" href="#" onclick="document.getElementById('topvac').style.display='none'"><div id="topvac3" class="close-bt">X</div></a>
+			<a id="close-top-vac" href="#" onclick="document.getElementById('topvac').style.display='none'">
+				<div id="topvac3" class="close-bt">
+					<img id="closetv" src="image/modal_close_icon.png" alt="image_close">
+				</div>
+			</a>
 			<img id="topvac1" class="top-vac-header1" src="image/topvacancies.png" alt="topvacancies">
 			<p id="topvac2" class="top-vac-header2">топ вакансій</p>
 		</div>
@@ -24,7 +27,7 @@
 			<a href="#"><p>+ <span>Розмістити вакансію в ТОПі</span></p></a>
 		</div>
 
-		<div id="top-vac-list" class="top-vac-list">
+		<div id="top-vac-list" class="top-vac-list cool-scroll">
 			<ul>
 				<li id="top-vac-li-1">
                     <p id="top-vac-li-1-date" class="tvl-date">10.06.2014</p>
@@ -127,21 +130,24 @@
                     <p id="top-vac-li-20-salary" class="tvl-salary">500 - 700 грн</p>
                 </li>
 			</ul>
+		</div>
 
+		<div class="footer">
+		   <img src="image/footer_logo.png" alt="image_logo_footer_news">
 		</div>
 	</div>
 	
+	
 	<div class="hidden-xs col-sm-offset-9 col-sm-3 news" >                       <!-- ---------NEWS----------->
-	   <div class="row header">
-		   <div>
-			   <img class="header-img" src="image/news.png" alt="image logo news">
-		   </div>
-		   <div><h1>НОВИНИ</h1></div>
-		   <div>
-			   <img id="close" src="image/modal_close_icon.png" alt="image_close">
-		   </div>
-	   </div>
-	   <div class="list">
+	   <div class="">
+	   		<div class="close-bt">
+				<img id="close" src="image/modal_close_icon.png" alt="image_close">
+			</div>
+			<img class="top-vac-header1" src="image/news.png" alt="image logo news">
+			<p id="topvac2" class="top-vac-header2">НОВИНИ</p>
+
+		</div>
+	   <div class="newslist list cool-scroll">
 		   <ul>
 			   <li>
 				   <span class="date">10.06.2014</span><br>
