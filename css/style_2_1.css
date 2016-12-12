@@ -1,11 +1,3 @@
-@font-face{
-        font-family: SegoeUI;
-        src: url(../fonts/SegoeUI.ttf);
- }
-
- html, body {
- 	font-family:'SegoeUI' !important;
-}
  
 * {
 	padding: 0;
@@ -18,9 +10,8 @@
 }
 
 .main{
-	padding-top: 200px;
-	padding-left: 0px;
-
+	margin-top:50px;
+	height:1000px;
 }
 .main img {
 	height: 190px;
@@ -31,7 +22,7 @@
 }
 
 
-.section > h3 {
+.section h3 {
 	color: #4F4F4F; 
 	font-size: 24px; 
 	font-family: SegoeUI;
@@ -39,13 +30,13 @@
 	margin-bottom: 0;
 }
 
-.section > h4 {
+.section h4 {
 	color: #CD2626; 
 	font-size: 18px; 
 	font-family: SegoeUI;
 }
 
-.section > p {
+.section p {
 	color: #696969; 
 	font-size: 18px; 
 	font-family: SegoueUI;
@@ -53,7 +44,7 @@
 	line-height: normal;
 }
 
-.below_section > a {
+.below_section a {
 	color: orangered; 
 	font-size: 18px;
 	text-decoration: underline; 
@@ -62,24 +53,24 @@
 	line-height: normal;
 }
 
-.below_section > i {
+.below_section i {
 	color: #CD2626; 
 	font-size: 28px;
 	line-height: normal;
 	
 }
-.below_section > span:nth-child(3) {
+.below_section span:nth-child(3) {
 	color: #CD2626; 
 	font-size: 22px;
 	padding-right: 15px;
 }
-.below_section > i:nth-child(4) {
+.below_section i:nth-child(4) {
 	color: grey; 
 	font-size: 28px;
 	line-height: normal;
 
 }
-.below_section > span:nth-child(5) {
+.below_section span:nth-child(5) {
 	color: grey; 
 	font-size: 20px;
 }
