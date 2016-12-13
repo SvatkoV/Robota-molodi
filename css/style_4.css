@@ -1,0 +1,156 @@
+@font-face{
+        font-family: "SegoeUI";
+        src: url(../fonts/SegoeUIRegular.ttf);
+ }
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "SegoeUI";
+
+}
+.container {
+	margin: 0 15% 0 15%;
+  	width: 70%;
+}
+
+.main{
+	padding-top: 200px;
+
+}
+.main img {
+	height: 190px;
+	width: 190px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+
+.section > h3 {
+	color: #4F4F4F; 
+	font-size: 24px; 
+	font-family: SegoeUI;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section > h4 {
+	color: #CD2626; 
+	font-size: 18px; 
+}
+
+.section > p {
+	color: #696969; 
+	font-size: 18px; 
+	margin: 0;
+	line-height: normal;
+}
+
+.below_section {
+	padding-top: 15px;
+	padding-bottom: 50px;
+
+}
+
+.below_section > a {
+	color: orangered; 
+	font-size: 18px;
+	text-decoration: underline; 
+	
+	padding-right: 15px;
+	line-height: normal;
+
+}
+
+.below_section > i {
+	color: #CD2626; 
+	font-size: 20px;
+	line-height: normal;
+	
+}
+
+.below_section > span:nth-child(3) {
+	color: #CD2626; 
+	font-size: 16px;
+	padding-right: 15px;
+}
+.below_section > i:nth-child(4) {
+	color: grey; 
+	font-size: 20px;
+	line-height: normal;
+}
+
+.below_section > i:nth-child(4) {
+ -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.below_section > span:nth-child(5) {
+	color: grey; 
+	font-size: 16px;
+}
+.line {
+	margin-left: 25px;
+}
+.glyphicon-repeat {
+	color: orange;
+	text-decoration: none;
+	
+}
+.glyphicon-repeat a {
+	color: darkorange;
+	text-decoration: underline;
+	margin-left: 5px;
+}
+.town {
+	color: gray;
+	font-size: 18px;
+	margin-left: 100px;
+
+}
+.drop {
+	color: orange;
+	font-size: 18px;
+	font-family: SegoeUI;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.data {
+	color: grey;
+	font-size: 18px;
+	font-family: SegoeUI;
+}
+hr {
+	border-top: 1px solid darkgrey;
+}
+
+#wrapper {
+	margin-left: 235px;
+}
+.fa-trash {
+	color: darkorange;
+	font-size: 18px;
+
+}
+.fa-trash > a {
+	color: darkorange;
+	font-size: 18px;
+	text-decoration: underline;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+.fa-pencil {
+	color: darkorange;
+	font-size: 18px;
+
+}
+
+.fa-pencil > a {
+	color: darkorange;
+	font-size: 18px;
+	text-decoration: underline;
+	margin-left: 5px;
+}

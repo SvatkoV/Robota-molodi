@@ -1,6 +1,6 @@
 @font-face{
         font-family: SegoeUI;
-        src: url(../fonts/SegoeUI.ttf);
+        src: url(../fonts/SegoeUIRegular.ttf);
  }
 
  html, body {
@@ -48,7 +48,7 @@
 .section > p {
 	color: #696969; 
 	font-size: 18px; 
-	font-family: SegoueUI;
+	font-family: SegoeUI;
 	margin: 0;
 	line-height: normal;
 }
@@ -174,7 +174,7 @@ hr {
 .input {
     width: 240px;
     color: darkorange;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .date {
@@ -189,7 +189,7 @@ hr {
 .rep {
     width: 150px;
     margin-left: 480px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: normal;
     margin-top: -25px;
 
@@ -206,7 +206,6 @@ hr {
 
 
 .send {
-
     border: 2px solid darkorange;
     background-color: darkorange;
     color: white;
