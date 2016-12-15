@@ -21,15 +21,8 @@ html,body{
 .news{
     margin-top: 10px;                    /*---For testing my block--*/
 }
-.news ul{
-    padding: 5px;
-    list-style-position: inside;
-	font-family: SegoeUIRegular;
-}
-.news li{
-    color:#f68c06;
-    padding: 5px 0;
-}
+
+
 .news li span .date{
     font-size: 0.8em;                /* ----font-size---  ?????? */
     color:grey;
@@ -38,15 +31,16 @@ html,body{
     width: 100%;
     border: 1px solid #f68c06;
     display:none;
+	margin-top:5px;
 }
-li:nth-child(3) img, li:nth-child(5) img{
+.news li:nth-child(3) img,.news li:nth-child(5) img{
     display: block;
 }
 .footer img{
     width:100%;
 }
 
-li a:hover{
+.news li a:hover{
     color:#f68c06;
 }
 #close{
@@ -76,10 +70,23 @@ div.list{
 }
 .newslist ul a{
     color:black;
-    text-decoration: underline;
-    font-style: normal;
-    font-weight: bold;    
+    text-decoration: underline;  
+    font-weight: bold; 
+	font-size: 14px;
+	line-height:inherit;
 }
+.news ul{
+    list-style-position: inside;
+	font-family: SegoeUIRegular;
+	font-size: 20px;
+	padding:0;
+}
+.news li{
+	line-height:14px;
+    color:#f68c06;
+    padding: 5px 0;
+}
+
 		/*----------------------------------------------------------------------------------------------*/
 .top-vac-div {
 	background-color:white;
@@ -176,4 +183,3 @@ div.list{
     margin-bottom: 15px;
 	font-size: 14px;
 }
-
