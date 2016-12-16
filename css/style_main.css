@@ -13,10 +13,9 @@
             url('../fonts/SegoeUIRegular.ttf') format('truetype');
 }
 html,body{
+	max-width: 1300px;
     padding:0;
-    margin:0;
-    height:100%;
-    width:100%;
+    margin:0 auto;
 }
 .news{
     margin-top: 10px;                    /*---For testing my block--*/
@@ -46,16 +45,6 @@ li:nth-child(3) img, li:nth-child(5) img{
     width:100%;
 }
 
-li a:hover{
-    color:#f68c06;
-}
-#close{
-    float:right;
-}
-#close:hover{
-    border: 2px solid red;
-}
-
 div.list{
     height:800px;           /*-------For testing my block---- */
     overflow-y:scroll;
@@ -77,12 +66,10 @@ div.list{
 .newslist ul a{
     color:black;
     text-decoration: underline;
-    font-style: normal;
     font-weight: bold;    
 }
 		/*----------------------------------------------------------------------------------------------*/
 .top-vac-div {
-	background-color:white;
 /*	border: 2px solid pink;*/
 }
 
@@ -104,15 +91,13 @@ div.list{
 	width:18px;
 	border-radius:2px;
 	background-color:#faeae5; 
-	font-family:arial;
-	font-size:10px;
-	font-weight:bold;
 	float:right;
 	text-align:center;
-	padding:2px;
+	line-height:14px;
 	margin-right:13px;
 	color:#cc3300;
 }
+
 .add2top p{
 	font-family: SegoeUIRegular;
 	font-size:16px;
@@ -125,7 +110,6 @@ div.list{
 
 .add2top span{text-decoration: underline;}
 .add2top a:active {text-decoration:none;}
-.add2top a:hover {text-decoration:none;}
 .add2top a,p:visited {text-decoration:none;}
 
 .top-vac-list{
@@ -135,45 +119,48 @@ div.list{
     overflow-y:scroll;
 }
 
-.cool-scroll::-webkit-scrollbar {
-    width: 8px;
-    background: #ddd;
-}
-
-.cool-scroll::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 4px;
-}
-
-.cool-scroll::-webkit-scrollbar-thumb {
-    background: #888 url(../image/Thumb.png) no-repeat;
-    background-position: center center;
-}
-
 .top-vac-list ul {
     list-style-position:inside;
-    padding:0;
+    padding:5px;
 	color:#f68c06; 
-	font-size: 20px;
+	font-size: 18px;	
+	line-height:16px;
 }
 
 .tvl-date{
     font-size: 11px;
     color:grey;
-	display:inline;
-	margin-left:-15px;
+	margin-left: -15px;
+	line-height:normal;
 }
 
-.tvl-position{
+.tvl-position {
     font-weight: bold;
     text-decoration: underline;
     color:black;
 	font-size: 14px;
+	line-height:normal;
 }
 
-.tvl-salary{
+.tvl-salary {
     color:grey;
-    margin-bottom: 15px;
+    padding-bottom:10px;
 	font-size: 14px;
+	line-height:normal;
 }
 
+.tv-link:hover  p{color:#f68c06;}
+.tv-link:-webkit-any-link {text-decoration: none;}
+
+.cool-scroll::-webkit-scrollbar {
+    width: 8px;
+    background: #ddd;
+}
+.cool-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+.cool-scroll::-webkit-scrollbar-thumb {
+    background: #888 url(../image/Thumb.png) no-repeat;
+    background-position: center center;
+}
