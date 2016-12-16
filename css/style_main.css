@@ -17,69 +17,28 @@ html,body{
     padding:0;
     margin:0 auto;
 }
-.news{
-    margin-top: 10px;                    /*---For testing my block--*/
-}
-.news ul{
-    padding: 5px;
-    list-style-position: inside;
-	font-family: SegoeUIRegular;
-}
-.news li{
-    color:#f68c06;
-    padding: 5px 0;
-}
-.news li span .date{
-    font-size: 0.8em;                /* ----font-size---  ?????? */
-    color:grey;
-}
-.news li img{
+.news{margin-top: 10px;}
+.top-vac {margin-top: 10px;}
+.top-vac p {margin-bottom:0px;}
+
+.tv-news-list li img{
     width: 100%;
     border: 1px solid #f68c06;
-    display:none;
 }
-li:nth-child(3) img, li:nth-child(5) img{
-    display: block;
+
+.tv-news-list li img[src="#"] {
+    display: none;
 }
-.footer img{
+
+.tv-news-footer img{
     width:100%;
 }
 
-div.list{
-    height:800px;           /*-------For testing my block---- */
-    overflow-y:scroll;
-}
-
-.header div:first-child{
-    margin-top:5%;
-}
-.header div:nth-child(2)
-{
-    padding-left: 5px;
-}
-.header div:last-child{
-    float:right;
-}
-.header-img{
-    width:80%;
-}
-.newslist ul a{
-    color:black;
-    text-decoration: underline;
-    font-weight: bold;    
-}
-		/*----------------------------------------------------------------------------------------------*/
-.top-vac-div {
-/*	border: 2px solid pink;*/
-}
-
-.top-vac-div p {margin-bottom:0px;}
-
-.top-vac-header1 {
+.tv-news-header1 {
 	float:left;
 	margin:6px 0 0 0;
 }
-.top-vac-header2 {
+.tv-news-header2 {
 	color:#f68c06; 
 	font-family:ACLine; 
 	font-size:32px;
@@ -112,14 +71,14 @@ div.list{
 .add2top a:active {text-decoration:none;}
 .add2top a,p:visited {text-decoration:none;}
 
-.top-vac-list{
+.tv-news-list{
     height: 520px;
     font-family: SegoeUIRegular;
 	color: #cc3300;
     overflow-y:scroll;
 }
 
-.top-vac-list ul {
+.tv-news-list ul {
     list-style-position:inside;
     padding:5px;
 	color:#f68c06; 
@@ -127,7 +86,7 @@ div.list{
 	line-height:16px;
 }
 
-.tvl-date{
+.tv-news-date{
     font-size: 11px;
     color:grey;
 	margin-left: -15px;
