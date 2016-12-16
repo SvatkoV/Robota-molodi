@@ -24,6 +24,7 @@ html,body{
 .tv-news-list li img{
     width: 100%;
     border: 1px solid #f68c06;
+	margin-bottom:10px;
 }
 
 .tv-news-list li img[src="#"] {
@@ -69,6 +70,7 @@ html,body{
 
 .add2top span{text-decoration: underline;}
 .add2top a:active {text-decoration:none;}
+.add2top a,p:hover {text-decoration:none; color:#f68c06;}
 .add2top a,p:visited {text-decoration:none;}
 
 .tv-news-list{
