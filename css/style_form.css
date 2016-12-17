@@ -6,7 +6,7 @@
 	min-width:300px;
 }
 .img{
-		margin:0 1px;
+		margin:0 -1px;
 }
 @media(min-width:1362px){
 	.form-login-widjet{	
@@ -15,7 +15,7 @@
 		min-width:280px;
 	}
 	.img{
-		margin:0 1px;
+		margin:0 -1px;
 	}
 }
 @media(min-width:1025px) and (max-width:1361px){
