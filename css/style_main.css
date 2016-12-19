@@ -133,3 +133,22 @@ html,body{
     background-position: center center;
 }
 
+.header-tabs li {
+	padding-bottom:0;
+	font-family: SegoeUIRegular;
+	font-size: 18px;
+}
+.header-tabs img {
+	margin-right:10px;
+}
+
+.header-tabs>ul>li.active>a, .header-tabs>ul>li.active>a:focus, .header-tabs>ul>li.active>a:hover {
+	color:#999999;
+}
+
+.header-tabs>ul>li>a, .header-tabs>ul>li>a:focus, .header-tabs>ul>li>a:hover {
+	color:#666666;
+}
+
+.padding-top-div{padding-top:20px;}
+
