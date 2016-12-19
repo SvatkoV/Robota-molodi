@@ -134,7 +134,9 @@ html,body{
 }
 
 			/*******Header tabs *********/
-
+.header-tabs{
+	margin-bottom:-1px;
+}
 .header-tabs>ul>li {
 	padding-bottom:0;
 	font-family: SegoeUIRegular;
@@ -160,3 +162,210 @@ html,body{
 
 .padding-top-div{padding-top:20px;}
 
+.add-list-group {
+	font-family: "SegoeUIRegular";
+	float: right;
+	padding-top:10px;
+}
+.list-inline {
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-bottom:0;
+}
+
+.list-unstyled_plus {
+	margin-right: 7px;
+}
+
+.add {
+	font-size: 18px;
+	color: #999999;
+	font-family: "SegoeUIRegular";
+}
+.glyphicon-plus {
+	font-size: 18px;
+	color: #999999;
+	font-family: "SegoeUIRegular";
+}
+
+.list-unstyled_vacansy a {
+	color:  #F68C06;
+	font-family: "SegoeUIRegular";
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+.list-unstyled_company a {
+	color:  #F68C06;
+	font-family: "SegoeUIRegular";
+	text-decoration: underline;
+	font-size: 18px;
+}
+.list-unstyled_resume a {
+	color:  #F68C06;
+	font-family: "SegoeUIRegular";
+	text-decoration: underline;
+	font-size: 18px;
+}
+/*
+@media screen and (max-width: 768px) and (min-width: 320px){
+	.add {
+		visibility: hidden;
+	}
+	.list-unstyled_vacansy, .list-unstyled_company, .list-unstyled_resume a {
+		visibility: hidden;
+	}
+
+	hr {
+		visibility: hidden;
+	}
+}
+*/
+			/****** Vacancy*******/
+.section h3 {
+	color: #4F4F4F; 
+	font-size: 24px; 
+	font-family: SegoeUIRegular;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section h4 {
+	color: #CD2626; 
+	font-size: 18px; 
+	font-family: SegoeUIRegular;
+}
+
+.section p {
+	color: #696969; 
+	font-size: 18px; 
+	font-family: SegoeUIRegular;
+	margin: 0;
+	line-height: normal;
+}
+.text-left{text-align:justify;}
+
+.below_section a {
+	color: orangered; 
+	font-size: 18px;
+	text-decoration: underline; 
+	font-family: SegoeUIRegular;
+	padding-right: 15px;
+	line-height: normal;
+}
+
+.below_section i {
+	color: #CD2626; 
+	font-size: 28px;
+	line-height: normal;
+	
+}
+.below_section span:nth-child(3) {
+	color: #CD2626; 
+	font-size: 22px;
+	padding-right: 15px;
+}
+.below_section i:nth-child(4) {
+	color: grey; 
+	font-size: 28px;
+	line-height: normal;
+
+}
+.below_section span:nth-child(5) {
+	color: grey; 
+	font-size: 20px;
+}
+.town {
+	color: gray;
+	font-size: 18px;
+	font-family: SegoeUIRegular;
+}
+.drop {
+	color: orange;
+	font-size: 18px;
+	font-family: SegoeUIRegular;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.data {
+	color: grey;
+	font-size: 18px;
+	font-family: SegoeUIRegular;
+}
+
+hr {
+	border-top: 1px solid darkgrey;
+}
+
+.bottom-line4row{
+border-bottom: 1px solid #dddddd;;
+}
+		/********FOOTER********/
+
+.footer{
+	font-family: SegoeUIRegular;	
+}
+.down-footer img{
+	margin-left: 10px;
+}
+.footer ul,li{
+	list-style-type:none;
+	padding-bottom: 10px;
+}
+
+.footer a{
+	color: #9d9d9d;
+}
+
+.container-footer {
+	height: 362px;
+	background-color: #3f3e3e;
+	padding: 20px 0;
+	margin-top: 30px;
+	color: #9d9d9d; 
+	font-size: 18px;
+}
+.container-footer i{
+	color: #d17c11;
+	margin-right: 15px;
+}
+
+.inner-footer{
+	float: left;
+}
+.inner-footer img{
+	margin-right: 10px;
+}
+
+.inner-footer hr{
+	margin:0px 0px 20px 0px;
+}
+
+.down-footer{
+	height: 77px;
+	background-color: #8f8f8f;
+	font-size: 14px;
+	padding: 20px;
+}
+
+.li_header{
+	margin: 30px 0px 20px 0px;
+	padding: 0px;
+	font-family: ACLine;
+	font-size:24px;
+	color: white;
+	font-weight: bold;
+}
+
+.li_header img{
+	margin-right: 10px;
+}
+
+.footer a:hover{
+	color: #d17c11;
+	text-decoration: none;
+}
+
+.footer :link{
+	text-decoration: none;
+}

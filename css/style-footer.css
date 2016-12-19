@@ -1,8 +1,8 @@
 @font-face{
         font-family: SegoeUI;
-        src: url(fonts/SegoeUIRegular.ttf);
+        src: url(../fonts/SegoeUIRegular.ttf);
         font-family: ACLine;
-        src: url(fonts/ACLine.ttf);
+        src: url(../fonts/ACLine.ttf);
 }
 .footer{
 	font-family: SegoeUI;	
