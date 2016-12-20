@@ -303,7 +303,8 @@ border-bottom: 1px solid #dddddd;;
 		/********FOOTER********/
 
 .footer{
-	font-family: SegoeUIRegular;	
+	font-family: SegoeUIRegular;
+	overflow:hidden;	
 }
 .down-footer img{
 	margin-left: 10px;
