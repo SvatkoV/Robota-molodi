@@ -18,6 +18,8 @@ html,body{
     margin:0 auto;
 }
 
+.row{width:100%;}				/*! Помогает от появления горизонтального скролла страницы !*/
+
 .news{margin-top: 10px;}
 .top-vac {margin-top: 10px;}
 .top-vac p {margin-bottom:0px;}
@@ -77,8 +79,9 @@ html,body{
 
 .add2top span{text-decoration: underline;}
 .add2top a:active {text-decoration:none;}
-.add2top a,p:hover {text-decoration:none; color:#f68c06;}
-.add2top a,p:visited {text-decoration:none;}
+.add2top a:hover,.add2top  p:hover {text-decoration:none; color:#f68c06;}
+.add2top a:hover,.add2top  p:visited {text-decoration:none;}
+.add2top :-webkit-any-link {text-decoration: none;}
 
 .tv-news-list{
     height: 520px;
@@ -297,19 +300,21 @@ hr {
 	border-top: 1px solid darkgrey;
 }
 
-.bottom-line4row{
-border-bottom: 1px solid #dddddd;;
+.bottom-line4row {
+	border-bottom: 1px solid #dddddd;
+	margin-bottom:10px;
 }
 		/********FOOTER********/
 
 .footer{
 	font-family: SegoeUIRegular;
-	overflow:hidden;	
+	overflow:hidden;
+	width:100%;
 }
 .down-footer img{
 	margin-left: 10px;
 }
-.footer ul,li{
+.footer ul, .footer  li{
 	list-style-type:none;
 	padding-bottom: 10px;
 }
@@ -319,7 +324,6 @@ border-bottom: 1px solid #dddddd;;
 }
 
 .container-footer {
-	height: 362px;
 	background-color: #3f3e3e;
 	padding: 20px 0;
 	margin-top: 30px;
@@ -343,7 +347,7 @@ border-bottom: 1px solid #dddddd;;
 }
 
 .down-footer{
-	height: 77px;
+
 	background-color: #8f8f8f;
 	font-size: 14px;
 	padding: 20px;
