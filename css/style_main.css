@@ -374,3 +374,25 @@ hr {
 .footer :link{
 	text-decoration: none;
 }
+
+/*  List selected */
+.list-section{
+    margin-top:20px;
+	margin-bottom:10px;
+}
+span.multiselect-selected-text{
+    float:left;
+    color:#666666;
+    font-size: 18px;
+}
+b.caret{
+    float:right;
+    margin-top: 10px;
+}
+div.wrapper-list{
+	padding:0;
+}
+.multiselect-container>li.active>a,
+.multiselect-container>li.active>a:hover{		
+	background-color:#f68c06;
+}
