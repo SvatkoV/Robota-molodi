@@ -393,7 +393,24 @@ b.caret{
 }
 div.wrapper-list{
 	padding:0;
+	margin-top:25px;
+		
 }
+div.wrapper-list-select-box, div.wrapper-list-label-box{
+	padding:0;
+}
+
+div.wrapper-list-label-box{
+	margin-bottom:5px;
+	margin-left:10px;
+}
+.wrapper-list-label-box label{
+	color:#f68c06;
+	font-size:18px;
+	margin-left:10px;
+}
+
+
 .multiselect-container>li.active>a,
 .multiselect-container>li.active>a:hover{		
 	background-color:#f68c06;

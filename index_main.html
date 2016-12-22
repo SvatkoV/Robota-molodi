@@ -64,48 +64,66 @@
 		</div>
 	</div>
 
-	<div class="row list-section" >
+	<div class="row list-section" >	
         <div class="col-md-2 wrapper-list">
+			<div class="col-xs-12 wrapper-list-label-box" id ="label-region" data-toggle="dropdown" type="button">
+				<img src="image/region.png" alt="Регіон" align="left">
+				<label for="list-selected-region">Регіон</label>
+			</div>
             <!-- Build select: -->
-            <select class="getting-list-selected-box" data-placeholder="Вся країна" multiple="multiple" name="selected-region">
-                <option value="999">Вся країна</option>
-                <option value="1" selected>АР Крим</option>
-                <option value="2">Вінниця</option>
-                <option value="3">Волинь</option>
-                <option value="4">Донеуцька</option>
-                <option value="5">Дніпропетровсяка</option>
-                <option value="6">Житомирська</option>
-                <option value="7">Кіровоградська</option>
-                <option value="8">Луганська</option>
-                <option value="9">Хмельницька</option>
-            </select>
+			<div class="col-xs-12 wrapper-list-select-box" id="list-selected-region">
+				<select class="getting-list-selected-box"  data-placeholder="Вся країна" multiple="multiple" name="selected-region">
+					<option value="999">Вся країна</option>
+					<option value="1" >АР Крим</option>
+					<option value="2">Вінниця</option>
+					<option value="3">Волинь</option>
+					<option value="4">Донеуцька</option>
+					<option value="5">Дніпропетровсяка</option>
+					<option value="6">Житомирська</option>
+					<option value="7">Кіровоградська</option>
+					<option value="8">Луганська</option>
+					<option value="9">Хмельницька</option>
+				</select>
+			</div>
         </div>
         <div class="col-md-5 wrapper-list">
+			<div class="col-xs-12 wrapper-list-label-box">	
+				<img src="image/bell.png" alt="Сфера діяльності" align="left">
+				<label>Сфера діяльності</label>
+			</div>
             <!-- Build select: -->
-            <select class="getting-list-selected-box" data-placeholder="Усі галузі" multiple="multiple" name="selected-indastry">
-                <option value="999">Усі сфeри</option>
-                <option value="1">Соцільна сфера</option>
-                <option value="2">Державна служба/Державний сектор</option>
-                <option value="3">Медицина</option>
-                <option value="4">ІТ</option>
-                <option value="5">ЖКХ</option>
-                <option value="6">Будівництво</option>
-                <option value="7">Торгівля</option>
-                <option value="8">Реклама</option>
-            </select>
+			<div class="col-xs-12 wrapper-list-select-box">
+				<select class="getting-list-selected-box" data-placeholder="Усі галузі" multiple="multiple" name="selected-indastry">
+					<option value="999">Усі сфeри</option>
+					<option value="1">Соцільна сфера</option>
+					<option value="2">Державна служба/Державний сектор</option>
+					<option value="3">Медицина</option>
+					<option value="4">ІТ</option>
+					<option value="5">ЖКХ</option>
+					<option value="6">Будівництво</option>
+					<option value="7">Торгівля</option>
+					<option value="8">Реклама</option>
+				</select>
+			</div>
         </div>
         <div class="col-md-5 wrapper-list">
+			<div class="col-xs-12 wrapper-list-label-box">
+				<img src="image/spetials.png" alt="Сфера діяльності" align="left">
+				<label>Спеціальність</label>
+			</div>
             <!-- Build select: -->
-            <select class="getting-list-selected-box" data-placeholder="Усі спеціалізації" multiple="multiple" name="selected-specialization">
-                <option value="999">Усі спеціалізації</option>
-                <option value="1">Программер</option>
-                <option value="2">Спеціаліст по тяжким випадкам</option>
-                <option value="3">Спеціаліст по викопуванню</option>
-                <option value="4">Тестировщик лопат</option>
-                <option value="5">Няня для програміста</option>
-                <option value="6">Говорун</option>
-                <option value="7">Менеджер по роботі з кліетнами</option>
-            </select>
+			<div class="col-xs-12 wrapper-list-select-box">
+				<select class="getting-list-selected-box" data-placeholder="Усі спеціалізації" multiple="multiple" name="selected-specialization">
+					<option value="999">Усі спеціалізації</option>
+					<option value="1">Программер</option>
+					<option value="2">Спеціаліст по тяжким випадкам</option>
+					<option value="3">Спеціаліст по викопуванню</option>
+					<option value="4">Тестировщик лопат</option>
+					<option value="5">Няня для програміста</option>
+					<option value="6">Говорун</option>
+					<option value="7">Менеджер по роботі з кліетнами</option>
+				</select>
+			</div>
         </div>
     </div>
 	
@@ -476,7 +494,7 @@
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
 <!-- Initialize the plugin: bootstrap-multiselect -->
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function() {	
         $('.getting-list-selected-box').multiselect({
                 buttonWidth: '100%'
 				, maxHeight: 200
