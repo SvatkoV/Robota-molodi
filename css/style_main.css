@@ -431,3 +431,10 @@ div.wrapper-list-label-box{
 .dropdown-menu{
 	width: 100%;
 }
+
+
+             /* Hiden_Likes */
+
+.likes, .count {
+	visibility: hidden;
+}
