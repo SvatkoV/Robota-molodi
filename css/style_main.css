@@ -226,7 +226,7 @@ html,body{
 */
 			/****** Vacancy*******/
 .section h3 {
-	color: #4F4F4F; 
+	color: #4F4F4F;
 	font-size: 24px; 
 	font-family: SegoeUIRegular;
 	margin-top: 0;
@@ -246,12 +246,16 @@ html,body{
 	margin: 0;
 	line-height: normal;
 }
-.text-left{text-align:justify;}
 
-.below_section a {
-	color: orangered; 
+
+.text-left{
+	text-align:justify;
+}
+
+.below_section  {
+	color: #A6A6A6;
 	font-size: 18px;
-	text-decoration: underline; 
+	text-decoration: none;
 	font-family: SegoeUIRegular;
 	padding-right: 15px;
 	line-height: normal;
@@ -287,8 +291,7 @@ html,body{
 	color: orange;
 	font-size: 18px;
 	font-family: SegoeUIRegular;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 0 10px;
 }
 .data {
 	color: grey;
@@ -433,14 +436,46 @@ div.wrapper-list-label-box{
 }
 
 
-             /* Hiden_Likes */
+             /* Hidden_Likes */
 
-.likes, .count {
+.likes {
 	visibility: hidden;
+	display: flex;
 }
 
-          /* change text  */
+            /* change text, links  */
 
-#vac0 {
-	
+
+.links:hover h3 {
+	display: block;
+	color: orange;
+	text-decoration: none;
 }
+
+.links:hover h4 {
+	display: block;
+	color: orange;
+	text-decoration: none;
+}
+
+.links:hover a {
+	display: block;
+	color: orange;
+	text-decoration: none;
+}
+.links:hover p {
+	display: block;
+	color: orange;
+	text-decoration: none;
+}
+
+.links:hover span {
+	display: block;
+	color: orange;
+	text-decoration: none;
+}
+.line {
+	display: flex;
+}
+
+
