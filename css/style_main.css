@@ -446,6 +446,10 @@ div.wrapper-list-label-box{
             /* change text, links  */
 
 
+.links :-webkit-any-link {
+	text-decoration: none;
+}
+
 .links:hover h3 {
 	display: block;
 	color: orange;
