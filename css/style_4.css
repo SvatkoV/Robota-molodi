@@ -18,12 +18,19 @@
 	padding-top: 200px;
 
 }
+.yarina {
+	float: left;
+}
 .main img {
 	height: 190px;
 	width: 190px;
 	float: left;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+.main p {
+	display:block;
+	margin-left: 40px; 
 }
 
 
@@ -93,7 +100,7 @@
 	font-size: 16px;
 }
 .line {
-	margin-left: 25px;
+	margin-left: 0px;
 }
 .glyphicon-repeat {
 	color: orange;
@@ -108,20 +115,20 @@
 .town {
 	color: gray;
 	font-size: 18px;
-	margin-left: 100px;
+	margin-left: 0px;
 
 }
 .drop {
 	color: orange;
 	font-size: 18px;
-	font-family: SegoeUI;
+	font-family: "SegoeUI";
 	padding-right: 10px;
 	padding-left: 10px;
 }
 .data {
 	color: grey;
 	font-size: 18px;
-	font-family: SegoeUI;
+	font-family: "SegoeUI";
 }
 hr {
 	border-top: 1px solid darkgrey;
@@ -153,4 +160,27 @@ hr {
 	font-size: 18px;
 	text-decoration: underline;
 	margin-left: 5px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	.section p {
+		margin-left: 20px;
+	}
+	.below_section a {
+		margin-left: 20px;
+	}
+	.line {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+	.section p {
+		padding-left: 0px;
+		margin-left: 20px;
+	}
+    .fa-thumbs-up {
+    	margin-left: 20px;
+    }
+
 }

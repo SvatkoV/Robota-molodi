@@ -4,6 +4,8 @@
         font-family: "SegoeUI";
         src: url('../fonts/SegoeUIRegular.ttf') format('truetype');
  }
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -56,7 +58,7 @@
 	color: orangered; 
 	font-size: 18px;
 	text-decoration: underline; 
-	font-family: "SegoeUI";
+	font-family: SegoeUI;
 	padding-right: 15px;
 	line-height: normal;
 }
@@ -153,81 +155,124 @@ hr {
 .list-inline li:nth-child(4){
 	margin-left: 50px;
 }
+
 #wrapper {
-    font: 18px;
-    width: 900px;
-    margin: 20px;
-    margin-left: 0px;
+	padding-top: 10px;
+}
+
+.res {
+    float: left;
+    height: 50px;
+    color: #6A6A6A;
+    font-size: 16px;
 }
 
 .string1 {
+
     display: inline-block;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    
-}
-
-.text {
-    width: 150px;
-    color: gray;
+    margin-left: 22px;
+    padding-bottom: 20px;
     font-size: 16px;
+}
+
+.string2 {
+    padding-bottom: 20px;
+    display: inline-block;
+    margin-left: 22px;
+}
+
+.string3 {
+    display: inline-block;
+    margin-left: 23px;
+    font-size: 16px;
+    padding-bottom: 20px;
 
 }
 
-.upload {
-    border: 1px solid darkorange;
-    margin-left: 150px;
-    margin-top: -27px;
-    border-radius: 10px;
-    padding: 7px;
-    width: 200px;
-    text-align: center;
-    color: #B9B9B9;
-
+.fa-repeat {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
-.text2 {
-    margin-left: 370px;
-    width: 200px;
-    margin-top: -23px;
-    color: #B9B9B9;
-}
-
-.text3 {
+.input {
+    width: 240px;
     color: darkorange;
+    font-size: 16px;
 }
 
-
-.delete {
-    margin-left: 560px;
-    margin-top: -19px;
-}
-
-.delete span {
-	color: red;
-	text-decoration: underline;
-}
-.fa-times {
-	color: red;
-	padding: 4px;
-}
-.format {
+.date {
+    width: 220px;
+    margin-left: 210px;
+    margin-top: -25px;
+    text-align: right;
     color: #B9B9B9;
-    font-size: 11px;
-    margin-left: 150px;
-    margin-top: 4px;
+    font-size: 16px;
 }
 
-.send {
-    border: 2px solid darkorange;
+.rep {
+    width: 150px;
+    margin-left: 470px;
+    font-size: 16px;
+    line-height: normal;
+    margin-top: -25px;
+
+}
+
+.rep a{
+	color: darkorange;
+	text-decoration: underline;
+	margin-right: 5px;
+}
+.rep i {
+	text-decoration: none;
+}
+
+
+.submit {
+	border: 2px solid darkorange;
     background-color: darkorange;
     color: white;
     border-radius: 10px;
     padding: 7px;
-    width: 150px;
+    width: 160px;
     text-align: center;
-    margin-left: 470px;
-    margin-top: -10px;
+    margin-left: 620px;
+    margin-top: 20px;
+    outline: none;
+   }
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+	.list-inline li:nth-child(4) {
+		margin-left: 0px;
+	}
+	
+	.town {
+	color: gray;
+	font-size: 18px;
+	-ms-font-family: "SegoeUI";
+	padding-left: 210px;
+	}
+	.string1, .string2, {
+		margin-left: 150px;
+	}
+	.string3 {
+		margin-left: 150px;
+	}
+
+}
+
+@media screen and (max-width: 1101px) and (min-width: 1025px) {
+	.string3 {
+		margin-left: 23px;
+	}
+}
+@media screen and (max-width: 1195px) and (min-width: 1025px){
+	.town {
+		padding-left: 0px;
+	}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -242,9 +287,35 @@ hr {
 	}
 	.below_section {
 	padding-top: 15px;
+	}
+	.submit {
+		 margin-left: 490px;
+	}
 }
 
+@media screen and (max-width: 768px) and (min-width: 320px) {
 
+	.list-inline li:nth-child(2) {
+		padding-left: 33px;
+	}
+
+	.list-inline li:nth-child(4) {
+		margin-left: 0px;
+	}
+	.below_section {
+		float: left;
+	}
+	#line {
+		display: inline-block;
+		padding-left: 0px;
+	}
+	.town {
+	color: gray;
+	font-size: 18px;
+	-ms-font-family: "SegoeUI";
+	padding-left: 0;
+	}
+}
 
 
 
