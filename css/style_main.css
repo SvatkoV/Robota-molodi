@@ -499,6 +499,7 @@ div.wrapper-list-label-box{
 span.opsion-sort-box{
 	color:#f68c06;
 	text-decoration:underline;
+	font-weight: normal;
 }
 span.label-sort-box{
 	color: #666666; 
@@ -507,7 +508,7 @@ span.label-sort-box{
 	margin: 0;
 }
 hr.line-sort-box {
-	border-top: 1px solid darkgrey;
+	border-top: 1px solid #cccccc;
 	margin-top: 0;
 }	
 span.opsion-sort-box:hover{
@@ -516,4 +517,11 @@ span.opsion-sort-box:hover{
 
 #from, #to{
 	width:80px;
+}
+
+.hasDatepicker{
+	/*border:none;*/
+	color:#f68c06;
+	font-family: SegoeUIRegular;
+	font-size:12px;
 }
