@@ -17,6 +17,11 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style_main.css">
 	
+	<link rel="stylesheet" type="text/css" href="css/jquery-datapicker-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-datapicker-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-datapicer-structure.css">
+	
+	
 </head>
 
 <body>
@@ -133,6 +138,31 @@
 								<!-- *************** ВАКАНСИИ ********************  -->
 		<main id="vacancy-tab" class="tab-pane fade in active">
 			<div class="col-xs-12 col-sm-9 main">
+				<!-- sort-box----- -->
+				<div class='row sort-box'>
+					<div class='col-xs-12 sort-box'>
+						<div class='col-xs-3'>
+							<span class='label-sort-box'>Сортувати по:</span>
+							<span class ='opsion-sort-box'>рейтингу</span>
+						</div>
+						<div class='col-xs-3'>
+							<span class='label-sort-box'>по даті:</span>
+							<span class='opsion-sort-box'>спочатку нові</span>
+						</div>
+						<div class='col-xs-6'>
+							<span class='label-sort-box'>по проміжку дат:</span>
+							<label for="from"><span class ='opsion-sort-box'>від</span></label>
+							<input type="text" id="from" name="from">
+						
+
+							<label for="to"><span class ='opsion-sort-box'>до</span></label>
+							<input type="text" id="to" name="to">
+						</div>
+						
+					</div>
+				
+				</div> <!-- the end of sort-box-->
+				<hr class='line-sort-box'>
 				<a href="index_resume_1.html"><div id="vac0" class="links">
 					<div class="section">
 						<h3>Продавец шмоток и старого мотлоха</h3>
@@ -555,11 +585,42 @@
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
 <!-- Initialize the plugin: bootstrap-multiselect -->
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/datapicker-ul.js"></script>
 <script>
 	$(document).ready(function(){
 		initMultiselect('.getting-list-selected-box');
 	});
-	
+ $( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
 </script>
 </body>
 </html>

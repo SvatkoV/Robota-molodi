@@ -492,3 +492,28 @@ div.wrapper-list-label-box{
 	text-align:left;
 	overflow:hidden;
 }
+
+.sort-box{
+	margin-top:15px;
+}
+span.opsion-sort-box{
+	color:#f68c06;
+	text-decoration:underline;
+}
+span.label-sort-box{
+	color: #666666; 
+	font-family: SegoeUIRegular;
+	font-size:12px;
+	margin: 0;
+}
+hr.line-sort-box {
+	border-top: 1px solid darkgrey;
+	margin-top: 0;
+}	
+span.opsion-sort-box:hover{
+	color:#e8641b;
+}
+
+#from, #to{
+	width:80px;
+}
