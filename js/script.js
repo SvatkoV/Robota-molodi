@@ -1,7 +1,9 @@
-﻿  $(document).ready(function() {	
-        $('.getting-list-selected-box').multiselect({
+﻿function initMultiselect(container){
+	$(container).multiselect({
                 buttonWidth: '100%'
 				, maxHeight: 200
-				,nSelectedText: '-Три і більше'
+				,nSelectedText: '-Три і більше'			
         });
-    });
+};
+
+	

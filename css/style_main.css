@@ -482,4 +482,13 @@ div.wrapper-list-label-box{
 	display: flex;
 }
 
-
+#list-selected-region span.multiselect-selected-text{
+	width:90%;
+	text-align:left;
+	overflow:hidden;
+}
+#list-selected-indastry span.multiselect-selected-text, #list-selected-specialization span.multiselect-selected-text{
+	width:95%;
+	text-align:left;
+	overflow:hidden;
+}

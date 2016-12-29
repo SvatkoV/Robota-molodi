@@ -65,13 +65,13 @@
 	</div>
 
 	<div class="row list-section" >	
-        <div class="col-md-2 wrapper-list">
-			<div class="col-xs-12 wrapper-list-label-box" id ="label-region" data-toggle="dropdown" type="button">
+        <div class="col-md-2 wrapper-list" id="list-selected-region">
+			<div class="col-xs-12 wrapper-list-label-box" id ="label-region">
 				<img src="image/region.png" alt="Регіон" align="left">
-				<label for="list-selected-region">Регіон</label>
+				<label>Регіон</label>
 			</div>
             <!-- Build select: -->
-			<div class="col-xs-12 wrapper-list-select-box" id="list-selected-region">
+			<div class="col-xs-12 wrapper-list-select-box" >
 				<select class="getting-list-selected-box"  data-placeholder="Вся країна" multiple="multiple" name="selected-region">
 					<option value="999">Вся країна</option>
 					<option value="1" >АР Крим</option>
@@ -86,7 +86,7 @@
 				</select>
 			</div>
         </div>
-        <div class="col-md-5 wrapper-list">
+        <div class="col-md-5 wrapper-list" id="list-selected-indastry">
 			<div class="col-xs-12 wrapper-list-label-box">	
 				<img src="image/bell.png" alt="Сфера діяльності" align="left">
 				<label>Сфера діяльності</label>
@@ -106,7 +106,7 @@
 				</select>
 			</div>
         </div>
-        <div class="col-md-5 wrapper-list">
+        <div class="col-md-5 wrapper-list" id="list-selected-specialization">
 			<div class="col-xs-12 wrapper-list-label-box">
 				<img src="image/spetials.png" alt="Сфера діяльності" align="left">
 				<label>Спеціальність</label>
@@ -536,6 +536,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<div class="down-footer col-xs-12">
 		<div class="inner-footer col-xs-12 col-md-6">
 				© 2012 | Проект реалізовано за підтримки міжнародного фонду "Відродження"
@@ -554,5 +555,11 @@
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
 <!-- Initialize the plugin: bootstrap-multiselect -->
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+	$(document).ready(function(){
+		initMultiselect('.getting-list-selected-box');
+	});
+	
+</script>
 </body>
 </html>
