@@ -17,6 +17,11 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style_main.css">
 	
+	<link rel="stylesheet" type="text/css" href="css/jquery-datapicker-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-datapicker-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-datapicer-structure.css">
+	
+	
 </head>
 
 <body>
@@ -133,6 +138,31 @@
 								<!-- *************** ВАКАНСИИ ********************  -->
 		<main id="vacancy-tab" class="tab-pane fade in active">
 			<div class="col-xs-12 col-sm-9 main">
+				<!-- sort-box----- -->
+				<div class='row sort-box'>
+					<div class='col-xs-12 sort-box'>
+						<div class='col-xs-3'>
+							<span class='label-sort-box'>Сортувати по:</span>
+							<span class ='opsion-sort-box'>рейтингу</span>
+						</div>
+						<div class='col-xs-3'>
+							<span class='label-sort-box'>по даті:</span>
+							<span class='opsion-sort-box'>спочатку нові</span>
+						</div>
+						<div class='col-xs-6'>
+							<span class='label-sort-box'>по проміжку дат:</span>
+							<label for="from"><span class ='opsion-sort-box'>від</span></label>
+							<input type="text" id="from" name="from">
+						
+
+							<label for="to"><span class ='opsion-sort-box'>до</span></label>
+							<input type="text" id="to" name="to">
+						</div>
+						
+					</div>
+				
+				</div> <!-- the end of sort-box-->
+				<hr class='line-sort-box'>
 				<a href="index_resume_1.html"><div id="vac0" class="links">
 					<div class="section">
 						<h3>Продавец шмоток и старого мотлоха</h3>
@@ -555,11 +585,82 @@
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
 <!-- Initialize the plugin: bootstrap-multiselect -->
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/datapicker-ul.js"></script>
 <script>
 	$(document).ready(function(){
 		initMultiselect('.getting-list-selected-box');
 	});
 	
+ $( function() {
+    var dateFormat = "dd/mm/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "-1m",
+          changeMonth: true,
+          numberOfMonths: 3
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "-1w",
+        changeMonth: true,
+        numberOfMonths: 3
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
+  
+  /* Russian (UTF-8) initialisation for the jQuery UI date picker plugin. */
+/* Written by Andrew Stromnov (stromnov@gmail.com). */
+( function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+
+		// AMD. Register as an anonymous module.
+		define( [ "../widgets/datepicker" ], factory );
+	} else {
+
+		// Browser globals
+		factory( jQuery.datepicker );
+	}
+}( function( datepicker ) {
+
+datepicker.regional.ru = {
+	closeText: "Закрыть",
+	prevText: "&#x3C;Пред",
+	nextText: "След&#x3E;",
+	currentText: "Сегодня",
+	monthNames: [ "Январь","Февраль","Март","Апрель","Май","Июнь",
+	"Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь" ],
+	monthNamesShort: [ "Янв","Фев","Мар","Апр","Май","Июн",
+	"Июл","Авг","Сен","Окт","Ноя","Дек" ],
+	dayNames: [ "воскресенье","понедельник","вторник","среда","четверг","пятница","суббота" ],
+	dayNamesShort: [ "вск","пнд","втр","срд","чтв","птн","сбт" ],
+	dayNamesMin: [ "Вс","Пн","Вт","Ср","Чт","Пт","Сб" ],
+	weekHeader: "Нед",
+	dateFormat: "dd.mm.yy",
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: "" };
+datepicker.setDefaults( datepicker.regional.ru );
+
+return datepicker.regional.ru;
+
+} ) );
+  
 </script>
 </body>
 </html>
