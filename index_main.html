@@ -83,7 +83,7 @@
 					<option value="2">Вінниця</option>
 					<option value="3">Волинь</option>
 					<option value="4">Донеуцька</option>
-					<option value="5">Дніпропетровсяка</option>
+					<option value="5">ДніпропетровсякаДніпропетровсяка</option>
 					<option value="6">Житомирська</option>
 					<option value="7">Кіровоградська</option>
 					<option value="8">Луганська</option>
@@ -589,15 +589,16 @@
 <script>
 	$(document).ready(function(){
 		initMultiselect('.getting-list-selected-box');
-	});
-	
+	});  
+
+/*  ---------------datapicker----------------------*/
  $( function() {
     var dateFormat = "dd/mm/yy",
       from = $( "#from" )
         .datepicker({
           defaultDate: "-1m",
           changeMonth: true,
-          numberOfMonths: 3
+          numberOfMonths: 1
         })
         .on( "change", function() {
           to.datepicker( "option", "minDate", getDate( this ) );
@@ -605,7 +606,7 @@
       to = $( "#to" ).datepicker({
         defaultDate: "-1w",
         changeMonth: true,
-        numberOfMonths: 3
+        numberOfMonths: 1
       })
       .on( "change", function() {
         from.datepicker( "option", "maxDate", getDate( this ) );
@@ -660,7 +661,8 @@ datepicker.setDefaults( datepicker.regional.ua );
 return datepicker.regional.ua;
 
 } ) );
-  
+/*--------------The end of datapicker----------------*/
+
 </script>
 </body>
 </html>
