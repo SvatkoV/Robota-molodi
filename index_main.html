@@ -25,10 +25,11 @@
 </head>
 
 <body>
-	<div class="padding-top-div"></div>
+<div class="container-fluid">
+	<div class="row padding-top-div"></div>
 	
 	<div class="row bottom-line4row">
-		<div class="col-md-7 header-tabs">
+		<div class="col-xs-11 col-md-7 header-tabs">
 		  <ul class="nav nav-tabs">
 			<li class="active">
 				<a data-toggle="tab" href="#vacancy-tab">
@@ -67,6 +68,20 @@
 				</li>
 			</ul>
 		</div>
+					<!-- + --->
+		<div class="col-xs-1 hidden-md hidden-lg dropdown plus-dropdn">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			<span class="">+</span>
+		  </button>
+		  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuPlus">
+			<li class="plus-dropdn-h">Додати:</li>
+			<li role="separator" class="divider"></li>
+			<li><a href="index_vacancy.html">Вакансію</a></li>
+			<li><a href="#">Компанію</a></li>
+			<li><a href="#">Резюме</a></li>
+		  </ul>
+		</div>
+	
 	</div>
 
 	<div class="row list-section" >	
@@ -133,11 +148,11 @@
     </div>
 	
 	
-	<div class="tab-content">
+	<div class="row tab-content">
 
 								<!-- *************** ВАКАНСИИ ********************  -->
 		<main id="vacancy-tab" class="tab-pane fade in active">
-			<div class="col-xs-12 col-sm-9 main">
+			<div class="col-xs-12 col-sm-9">
 				<!-- sort-box----- -->
 				<div class='row sort-box'>
 					<div class='col-xs-12 sort-box'>
@@ -516,7 +531,7 @@
 	</div>
 
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
-    <footer class="footer">
+    <footer class="row footer">
     <div class="container-footer col-xs-12">
    		<div class="inner-footer col-xs-12 col-sm-6 col-md-3">
 			<ul>
@@ -582,6 +597,7 @@
 		</div>
     </div>
     </footer>
+</div>
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
 <!-- Initialize the plugin: bootstrap-multiselect -->
 <script type="text/javascript" src="js/script.js"></script>
@@ -624,8 +640,7 @@
     }
   } );
   
-  /* Russian (UTF-8) initialisation for the jQuery UI date picker plugin. */
-/* Written by Andrew Stromnov (stromnov@gmail.com). */
+  /* Ukrainian (UTF-8) initialisation for the jQuery UI date picker plugin. */
 ( function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
 
