@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>			<!-- Тут собираем всё что есть-->
+﻿<!DOCTYPE html>			<!-- -->
 <html>
 <head>
-	<title> MainPage </title>
+	<title>Робота Молоді</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -27,7 +27,7 @@
 <body>
 <div class="container-fluid">
 	<div class="row padding-top-div"></div>
-	
+												<!-- TABS  -->
 	<div class="row bottom-line4row">
 		<div class="col-xs-11 col-md-7 header-tabs">
 		  <ul class="nav nav-tabs">
@@ -51,6 +51,7 @@
 			</li>
 		  </ul>
 		</div>
+													<!-- Add new: -Vac -Comp -Res.  Line  -->
 		<div class="col-md-5 hidden-xs hidden-sm add-list-group">
 			<ul class="list-inline ">
 				<li class="list-unstyled_plus">
@@ -68,7 +69,7 @@
 				</li>
 			</ul>
 		</div>
-					<!-- + --->
+												<!-- Add new: -Vac -Comp -Res. +dropdown --->
 		<div class="col-xs-1 hidden-md hidden-lg dropdown plus-dropdn">
 		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			<span class="">+</span>
@@ -147,177 +148,243 @@
         </div>
     </div>
 	
+		<!-- sort-box----- -->
+	<div class='row sort-box'>
+		<div class='col-xs-12 sort-box'>
+			<div class='col-xs-3'>
+				<span class='label-sort-box'>Сортувати по:</span>
+				<span class ='opsion-sort-box'>рейтингу</span>
+			</div>
+			<div class='col-xs-3'>
+				<span class='label-sort-box'>по даті:</span>
+				<span class='opsion-sort-box'>спочатку нові</span>
+			</div>
+			<div class='col-xs-6'>
+				<span class='label-sort-box'>по проміжку дат:</span>
+				<label for="from"><span class ='opsion-sort-box'>від</span></label>
+				<input type="text" id="from" name="from">
+			
+
+				<label for="to"><span class ='opsion-sort-box'>до</span></label>
+				<input type="text" id="to" name="to">
+			</div>
+			
+		</div>
 	
-	<div class="row tab-content">
+	</div> <!-- the end of sort-box-->
+	<hr class='line-sort-box'>
+	
+								<!-- *************** TABS CONTENT ********************  -->
+	
+	<main class="row tab-content">
 
-								<!-- *************** ВАКАНСИИ ********************  -->
-		<main id="vacancy-tab" class="tab-pane fade in active">
-			<div class="col-xs-12 col-sm-9">
-				<!-- sort-box----- -->
-				<div class='row sort-box'>
-					<div class='col-xs-12 sort-box'>
-						<div class='col-xs-3'>
-							<span class='label-sort-box'>Сортувати по:</span>
-							<span class ='opsion-sort-box'>рейтингу</span>
-						</div>
-						<div class='col-xs-3'>
-							<span class='label-sort-box'>по даті:</span>
-							<span class='opsion-sort-box'>спочатку нові</span>
-						</div>
-						<div class='col-xs-6'>
-							<span class='label-sort-box'>по проміжку дат:</span>
-							<label for="from"><span class ='opsion-sort-box'>від</span></label>
-							<input type="text" id="from" name="from">
-						
-
-							<label for="to"><span class ='opsion-sort-box'>до</span></label>
-							<input type="text" id="to" name="to">
-						</div>
-						
-					</div>
-				
-				</div> <!-- the end of sort-box-->
-				<hr class='line-sort-box'>
-				<a href="index_resume_1.html"><div id="vac0" class="links">
-					<div class="section">
-						<h3>Продавец шмоток и старого мотлоха</h3>
-						<h4>
-							<strong>
-								500 - 5 000 USD
-							</strong>
-						</h4>
-						<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
-					</div>
-					<div class="below_section">
-						<span>ООО Рекламное агентство Риелторская Сотня</span>
-							<div class="likes">
-								<i class="material-icons"><sub>&#xe8dc;</sub></i>
-								<span>92</span>
-								<i class="material-icons"><sub>&#xe8db;</sub></i>
-								<span>5</span>
-							</div>
-					</div>
-					<a href="#"><div class="line">
-						<span class="town">Херсон</span>
-						<span class="drop">&bull;</span>
-						<span class="data">12 мая 2015</span>
-					</div></a>
-					<hr>
-				</div></a>
-
-				<a href="index_resume_4.html"><div id="vac1" class="links">
-				  <div class="section">
-					<h3>Разработка и оптимизация сайтов</h3>
+								<!-- *************** VACANCY's ********************  -->
+		<div id="vacancy-tab" class="tab-pane fade in active col-xs-12 col-sm-9 main-tab-div">
+			
+			<a href="index_resume_1.html"><div id="vac0" class="links">
+				<div class="section">
+					<h3>Продавец шмоток и старого мотлоха</h3>
 					<h4>
 						<strong>
-							1500 - 2 500 USD
+							500 - 5 000 USD
 						</strong>
 					</h4>
-					<p class="text-left">Разработка и оптимизация сайта «Информационный ресурс 3D Realty» 
-						http://3drealty.hol.es (сайт запущен в тестовом режиме) главная тематика сайта реализация объектов недвижимости, классификация объектов недвижимости, законодательная база, образцы документов.</p>
-					</div>
-					<div class="below_section">
-						<span>ООО Рекламное агентство Риелторская Сотня</span>
-							<div class="likes">
-								<i class="material-icons"><sub>&#xe8dc;</sub></i>
-								<span>33</span>
-								<i class="material-icons"><sub>&#xe8db;</sub></i>
-								<span>15</span><br>
-							</div>
-					</div>
-					<a href="#"><div class="line">
-						<span class="town">Винница</span>
-						<span class="drop">&bull;</span>
-						<span class="data">2 ноября 2016</span>
-					</div></a>
-					<hr>
-				</div></a>
-
-				<a href="index_resume_0.html"><div id="vac2" class="links">
-					<div class="section">
-						<h3>Распространение информации (публикация рекламы)</h3>
-						<h4>
-							<strong>
-								300 - 1 000 USD
-							</strong>
-						</h4>
-						<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
-					</div>
-					<div class="below_section">
-						<span>ООО Рекламное агентство Риелторская Сотня</span>
+					<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
+				</div>
+				<div class="below_section">
+					<span>ООО Рекламное агентство Риелторская Сотня</span>
 						<div class="likes">
 							<i class="material-icons"><sub>&#xe8dc;</sub></i>
-							<span>12</span>
+							<span>92</span>
 							<i class="material-icons"><sub>&#xe8db;</sub></i>
-							<span>2</span><br>
+							<span>5</span>
 						</div>
-					</div>
-					<a href="#"><div class="line">
-						<span class="town">Киев</span>
-						<span class="drop">&bull;</span>
-						<span class="data">14 февраля 2016</span>
-					</div></a>
-				<hr>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Херсон</span>
+					<span class="drop">&bull;</span>
+					<span class="data">12 мая 2015</span>
 				</div></a>
-				
-				<a href="index_resume_2.html"><div id="vac2" class="links">
-					<div class="section">
-						<h3>Ята-Като Ярина Яремiвна</h3>
-						<h4>
-							<strong>
-								Вартість консультації: USD 50
-							</strong>
-						</h4>
-						<p class="text-left"> Разработка и оптимизация сайта «Информационный ресурс 3D Realty» 
-                        http://3drealty.hol.es (сайт запущен в тестовом режиме) главная тематика сайта реализация объектов недвижимости, классификация объектов недвижимости, законодательная база, образцы документов.</p>
-					</div>
-					<div class="below_section">
-						<span>«Информационный ресурс 3D Realty»</span>
+				<hr>
+			</div></a>
+
+			<a href="index_resume_4.html"><div id="vac1" class="links">
+			  <div class="section">
+				<h3>Разработка и оптимизация сайтов</h3>
+				<h4>
+					<strong>
+						1500 - 2 500 USD
+					</strong>
+				</h4>
+				<p class="text-left">Разработка и оптимизация сайта «Информационный ресурс 3D Realty» 
+					http://3drealty.hol.es (сайт запущен в тестовом режиме) главная тематика сайта реализация объектов недвижимости, классификация объектов недвижимости, законодательная база, образцы документов.</p>
+				</div>
+				<div class="below_section">
+					<span>ООО Рекламное агентство Риелторская Сотня</span>
 						<div class="likes">
 							<i class="material-icons"><sub>&#xe8dc;</sub></i>
-							<span>12</span>
+							<span>33</span>
 							<i class="material-icons"><sub>&#xe8db;</sub></i>
-							<span>2</span><br>
+							<span>15</span><br>
 						</div>
-					</div>
-					<a href="#"><div class="line">
-						<span class="town">Винница</span>
-						<span class="drop">&bull;</span>
-						<span class="data">24 ноября 2015</span>
-					</div></a>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Винница</span>
+					<span class="drop">&bull;</span>
+					<span class="data">2 ноября 2016</span>
+				</div></a>
 				<hr>
-				</div></a>
-				
-				<a href="index_resume_3.html"><div id="vac0" class="links">
-					<div class="section">
-						<h3>Продавец шмоток и старого мотлоха</h3>
-						<h4>
-							<strong>
-								500 - 5 000 USD
-							</strong>
-						</h4>
-						<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
-					</div>
-					<div class="below_section">
-						<span>ООО Рекламное агентство Риелторская Сотня</span>
-							<div class="likes">
-								<i class="material-icons"><sub>&#xe8dc;</sub></i>
-								<span>92</span>
-								<i class="material-icons"><sub>&#xe8db;</sub></i>
-								<span>5</span>
-							</div>
-					</div>
-					<a href="#"><div class="line">
-						<span class="town">Херсон</span>
-						<span class="drop">&bull;</span>
-						<span class="data">12 мая 2015</span>
-					</div></a>
-					<hr>
-				</div></a>
-				
-			</div>
+			</div></a>
 
-													<!-- *********** ТОП ВАКАНСИЙ ****************  -->
+			<a href="index_resume_0.html"><div id="vac2" class="links">
+				<div class="section">
+					<h3>Распространение информации (публикация рекламы)</h3>
+					<h4>
+						<strong>
+							300 - 1 000 USD
+						</strong>
+					</h4>
+					<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
+				</div>
+				<div class="below_section">
+					<span>ООО Рекламное агентство Риелторская Сотня</span>
+					<div class="likes">
+						<i class="material-icons"><sub>&#xe8dc;</sub></i>
+						<span>12</span>
+						<i class="material-icons"><sub>&#xe8db;</sub></i>
+						<span>2</span><br>
+					</div>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Киев</span>
+					<span class="drop">&bull;</span>
+					<span class="data">14 февраля 2016</span>
+				</div></a>
+			<hr>
+			</div></a>
+			
+			<a href="index_resume_2.html"><div id="vac2" class="links">
+				<div class="section">
+					<h3>Ята-Като Ярина Яремiвна</h3>
+					<h4>
+						<strong>
+							Вартість консультації: USD 50
+						</strong>
+					</h4>
+					<p class="text-left"> Разработка и оптимизация сайта «Информационный ресурс 3D Realty» 
+					http://3drealty.hol.es (сайт запущен в тестовом режиме) главная тематика сайта реализация объектов недвижимости, классификация объектов недвижимости, законодательная база, образцы документов.</p>
+				</div>
+				<div class="below_section">
+					<span>«Информационный ресурс 3D Realty»</span>
+					<div class="likes">
+						<i class="material-icons"><sub>&#xe8dc;</sub></i>
+						<span>12</span>
+						<i class="material-icons"><sub>&#xe8db;</sub></i>
+						<span>2</span><br>
+					</div>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Винница</span>
+					<span class="drop">&bull;</span>
+					<span class="data">24 ноября 2015</span>
+				</div></a>
+			<hr>
+			</div></a>
+			
+			<a href="index_resume_3.html"><div id="vac0" class="links">
+				<div class="section">
+					<h3>Продавец шмоток и старого мотлоха</h3>
+					<h4>
+						<strong>
+							500 - 5 000 USD
+						</strong>
+					</h4>
+					<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
+				</div>
+				<div class="below_section">
+					<span>ООО Рекламное агентство Риелторская Сотня</span>
+						<div class="likes">
+							<i class="material-icons"><sub>&#xe8dc;</sub></i>
+							<span>92</span>
+							<i class="material-icons"><sub>&#xe8db;</sub></i>
+							<span>5</span>
+						</div>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Херсон</span>
+					<span class="drop">&bull;</span>
+					<span class="data">12 мая 2015</span>
+				</div></a>
+				<hr>
+			</div></a>
+			
+		</div>
+											<!-- *************** CV's ********************  -->
+	   <div id="resume-tab" class="tab-pane fade col-xs-12 col-sm-9 main-tab-div">
+			
+			<a href="index_resume_0.html"><div id="vac2" class="links">
+				<div class="section">
+					<h3>Распространение информации (публикация рекламы)</h3>
+					<h4>
+						<strong>
+							300 - 1 000 USD
+						</strong>
+					</h4>
+					<p class="text-left"> Распространение информации (публикация рекламы). Телефонные переговоры. Деловые встречи (по желанию). Представительство в регионе (с дополнительной оплатой или %). Грамотное общение. Навыки работы на компьютеpе (e-mail, соц. сети, публикации). Позитивное мышление.</p>
+				</div>
+				<div class="below_section">
+					<span>ООО Рекламное агентство Риелторская Сотня</span>
+					<div class="likes">
+						<i class="material-icons"><sub>&#xe8dc;</sub></i>
+						<span>12</span>
+						<i class="material-icons"><sub>&#xe8db;</sub></i>
+						<span>2</span><br>
+					</div>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Киев</span>
+					<span class="drop">&bull;</span>
+					<span class="data">14 февраля 2016</span>
+				</div></a>
+			<hr>
+			</div></a>
+			
+			<a href="index_resume_2.html"><div id="vac2" class="links">
+				<div class="section">
+					<h3>Ята-Като Ярина Яремiвна</h3>
+					<h4>
+						<strong>
+							Вартість консультації: USD 50
+						</strong>
+					</h4>
+					<p class="text-left"> Разработка и оптимизация сайта «Информационный ресурс 3D Realty» 
+					http://3drealty.hol.es (сайт запущен в тестовом режиме) главная тематика сайта реализация объектов недвижимости, классификация объектов недвижимости, законодательная база, образцы документов.</p>
+				</div>
+				<div class="below_section">
+					<span>«Информационный ресурс 3D Realty»</span>
+					<div class="likes">
+						<i class="material-icons"><sub>&#xe8dc;</sub></i>
+						<span>12</span>
+						<i class="material-icons"><sub>&#xe8db;</sub></i>
+						<span>2</span><br>
+					</div>
+				</div>
+				<a href="#"><div class="line">
+					<span class="town">Винница</span>
+					<span class="drop">&bull;</span>
+					<span class="data">24 ноября 2015</span>
+				</div></a>
+			<hr>
+			</div></a>
+			
+	   </div>
+	   
+												<!-- *************** ALL COMPANIES ********************  -->
+	   <div id="allcompanies-tab" class="tab-pane fade col-xs-12 col-sm-9 main-tab-div">
+			This allcompanies block is under construction yet
+	   </div>
+
+													<!-- *********** TOP VACANCY's ****************  -->
 
 			<div id="topvac" class="col-sm-3 hidden-xs top-vac">
 				
@@ -518,17 +585,8 @@
 				   <img src="image/footer_logo.png" alt="image_logo_footer">
 			   </div>
 		   </div>
-	   </main>
-	   
-	   <main id="resume-tab" class="tab-pane fade">
-			This resume block is under construction yet
-	   </main>
-	   
-	   <main id="allcompanies-tab" class="tab-pane fade">
-			This allcompanies block is under construction yet
-	   </main>
    
-	</div>
+	</main>
 
 <!------------------------------------------------------------- FOOTER ------------------------------------------------------>
     <footer class="row footer">

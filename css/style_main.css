@@ -18,7 +18,6 @@ html,body{
     margin:0 auto;
 }
 
-
 .news{margin-top: 10px;}
 .top-vac {margin-top: 10px;}
 .top-vac p {margin-bottom:0px;}
@@ -35,9 +34,6 @@ html,body{
 }
 
 		/*----------------------------------------------------------------------------------------------*/
-.top-vac-div {
-	background-color:white;
-}
 .tv-news-footer img{
     width:100%;
 }
@@ -526,4 +522,8 @@ span.opsion-sort-box:hover{
 	color:#f68c06;
 	padding:0 10px;
 	font-weight:bold;	
+}
+
+.main-tab-div{
+	min-height:1250px;
 }
