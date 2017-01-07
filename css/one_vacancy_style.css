@@ -1,0 +1,103 @@
+@font-face{
+        -ms-font-family: "SegoeUI";
+      	-ms-src: url('../fonts/SegoeUIRegular.ttf') format('truetype');
+        font-family: "SegoeUI";
+        src: url('../fonts/SegoeUIRegular.ttf') format('truetype');
+ }
+
+ * {
+	padding-top: 30px;
+	margin: 0;
+	font-family: "SegoeUI";
+
+}
+.container {
+	margin: 0 15% 0 15%;
+  	width: 70%;
+}
+.col-md-4 {
+	padding-top: 0px;
+}
+.rha{
+	border-radius: 10px;
+	border-width: 1px;
+	border-color:  #f26522;
+	border-style: solid;
+	width: 134px;
+	height: 134px;
+	display: block;
+	padding-top: 0px;
+}
+div.picture {
+	padding-top: 0px;
+}
+div.case {
+	padding-top: 0px;
+	display: block;
+	width: 134px;
+}
+
+i.fa {
+	color:  #f68c06;
+	width: 24px;
+	height: 21px;
+	padding-top: 10px;
+	float: left;
+	padding-left: 5px;
+}
+div#consult {
+	padding-top: 10px;
+	width: 84px;
+	height: 25px;
+	display: flex;
+	padding-left: 10px;
+	float: left;
+	text-align: justify;
+	
+}
+
+#consult a {
+	font-family: 'Segoe UI';
+	color:  #f68c06;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 11px;
+	text-align: justify;
+	padding-top: 0px;
+}
+
+div.share {
+	font-family: 'Segoe UI';
+	color:  #cc0000;
+	font-size: 14.93px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: left;
+	transform: scaleY(1.0001);
+}
+.share p {
+	margin: 0px;
+}
+div.social {
+	padding-top: 5px;
+	width: 134px;
+	text-align: justify-all;	
+}
+.social i {
+	color: #cccccc;
+	font-size: 25px;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+i.fa {
+	font-size: 25px;
+	display: block;
+}
+.social i:hover {
+	color: orange;
+}
+
+
+	
