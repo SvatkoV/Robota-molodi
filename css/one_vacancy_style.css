@@ -45,7 +45,7 @@ i.fa {
 	float: left;
 	padding-left: 5px;
 }
-div#consult {
+div.consult {
 	padding-top: 10px;
 	width: 84px;
 	height: 25px;
@@ -56,7 +56,7 @@ div#consult {
 	
 }
 
-#consult a {
+.consult a {
 	font-family: 'Segoe UI';
 	color:  #f68c06;
 	font-size: 14px;
@@ -98,6 +98,10 @@ i.fa {
 .social i:hover {
 	color: orange;
 }
+i.fa-google-plus-square {
+	padding-left: 5px;
+}
+
 
 
 	
