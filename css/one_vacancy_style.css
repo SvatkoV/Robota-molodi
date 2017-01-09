@@ -102,6 +102,7 @@ i.fa-google-plus-square {
 	padding-left: 5px;
 }
 
+
 /*right colomn*/
 
 p.text_vac{
@@ -150,9 +151,7 @@ input{
 	padding: 5px;
 	margin: 5px;
 	text-transform: uppercase;
-
 }
-
 
 ul{
 	padding: 0;
@@ -192,7 +191,6 @@ p.rating_input{
 	margin-right: 5px;
 	padding: 0;
 }
-
 
 input.rating_input:hover{
 	color: #f68c06;
