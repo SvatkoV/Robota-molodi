@@ -102,6 +102,132 @@ i.fa-google-plus-square {
 	padding-left: 5px;
 }
 
+/*right colomn*/
+
+p.text_vac{
+	padding: 0;
+	margin: 0;
+	color: #797979;
+	font-size: 16px;
+}
+
+p.orang{
+	color: #f68c06;
+}
+
+p.otstup1{
+	margin-top: 5px;
+}
+
+p.otstup2{
+	margin-top: 20px;
+}
+
+span{
+	padding: 0;
+}
+
+div.button_vac{
+	padding: 0;
+}
+label{
+	padding: 0;
+}
+
+div.rating{
+	padding: 0;
+	padding-top: 5px;
+}
+
+input{
+	padding: 0;
+	background-color: #F68C06;
+	color: white;
+	font-size: 16px;
+	border-radius: 12px;
+	border:0;
+	height: 36px;
+	padding: 5px;
+	margin: 5px;
+	text-transform: uppercase;
+
+}
+
+
+ul{
+	padding: 0;
+	list-style: square;
+	list-style-position: inside;
+}
+
+li{
+	padding: 0;
+	color: #f68c06;
+}
+
+li span{
+	color: #797979;
+}
+
+.red_vac{
+	color: #cc0000;
+}
+
+.orang{
+	color: #f68c06;
+}
+
+.right_vac{
+	padding: 0;
+}
+
+p.rating_input{
+	margin-right: 20px;
+}
+
+.rating_input{
+	display: inline;
+	color: #797979;
+	font-size: 16px;
+	margin-right: 5px;
+	padding: 0;
+}
+
+
+input.rating_input:hover{
+	color: #f68c06;
+}
+
+a#like{
+	background:url("../image/like1.jpg") no-repeat;
+	padding: 0;
+	display: inline;
+	text-decoration: none;
+}
+
+a#like:hover{
+	background:url("../image/like2.jpg") no-repeat;
+	color: #cc0000;
+}
+
+a#dislike{
+	background:url("../image/dislike1.jpg") no-repeat;
+	padding: 0;
+	display: inline;
+	text-decoration: none;
+}
+
+a#dislike:hover{
+	background:url("../image/dislike2.jpg") no-repeat;
+	color: #cc0000;
+}
+
+span.like{
+	margin-left: 20px;
+}
+span.dislike{
+	margin-left: 20px;
+}
 
 
 	
