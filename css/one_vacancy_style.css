@@ -135,11 +135,6 @@ label{
 	padding: 0;
 }
 
-div.rating{
-	padding: 0;
-	padding-top: 5px;
-}
-
 input{
 	padding: 0;
 	background-color: #F68C06;
@@ -178,53 +173,6 @@ li span{
 
 .right_vac{
 	padding: 0;
-}
-
-p.rating_input{
-	margin-right: 20px;
-}
-
-.rating_input{
-	display: inline;
-	color: #797979;
-	font-size: 16px;
-	margin-right: 5px;
-	padding: 0;
-}
-
-input.rating_input:hover{
-	color: #f68c06;
-}
-
-a#like{
-	background:url("../image/like1.jpg") no-repeat;
-	padding: 0;
-	display: inline;
-	text-decoration: none;
-}
-
-a#like:hover{
-	background:url("../image/like2.jpg") no-repeat;
-	color: #cc0000;
-}
-
-a#dislike{
-	background:url("../image/dislike1.jpg") no-repeat;
-	padding: 0;
-	display: inline;
-	text-decoration: none;
-}
-
-a#dislike:hover{
-	background:url("../image/dislike2.jpg") no-repeat;
-	color: #cc0000;
-}
-
-span.like{
-	margin-left: 20px;
-}
-span.dislike{
-	margin-left: 20px;
 }
 
 
