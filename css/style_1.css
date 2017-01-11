@@ -244,6 +244,9 @@ hr {
     outline: none;
    }
 
+.fa-thumbs-up, .number, .number_dislike {
+	display: none;
+}
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
 	.list-inline li:nth-child(4) {
 		margin-left: 0px;

@@ -230,6 +230,10 @@ hr {
     margin-top: -10px;
 }
 
+.fa-thumbs-up, .number, .number_dislike {
+	display: none;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.town {
 		padding-left: 0px;

@@ -162,6 +162,10 @@ hr {
 	margin-left: 5px;
 }
 
+.fa-thumbs-up, .number, .number_dislike {
+	display: none;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.section p {
 		margin-left: 20px;
